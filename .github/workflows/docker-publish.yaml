@@ -28,7 +28,7 @@ jobs:
       - name: Build Docker image
         run: |
           docker build -t ghcr.io/anycontext-ai/puppeteer-mcp-server:latest .
-          docker build -t ghcr.io/anycontext-ai/puppeteer-mcp-server:${VERSION} -t ghcr.io/${{ github.repository }}/puppeteer-mcp-server:latest .
+          docker build -t ghcr.io/anycontext-ai/puppeteer-mcp-server:${VERSION} -t ghcr.io/anycontext-ai/puppeteer-mcp-server:latest .
 
       - name: Push Docker image
         run: |
